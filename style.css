@@ -1,0 +1,220 @@
+     @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,300italic,400italic,600italic);
+     body {
+         font-family: 'Courier', 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode';
+         color: #4F5155;
+         font-size: 14px;
+         padding: 0;
+         margin: 0;
+         width: 100%;
+         height: 100vh;
+         display: flex;
+         background-color: yellow;
+     }
+     
+     table {
+         max-width: 650px;
+     }
+     
+     .container {
+         max-width: 650px;
+     }
+     
+     input {
+         padding: 3px;
+         margin: 3px;
+         width: 45%;
+     }
+     /* span #customer_name_D {
+         padding-left: 0;
+     } */
+     
+     .input_large {
+         width: 94%;
+     }
+     
+     .input_small {
+         width: 20%
+     }
+     
+     .customersVendor {
+         width: 650px;
+         /* border-top: 2px solid #2b2929;
+         border-left: 2px solid #2b2929;
+         border-right: 2px solid #2b2929; */
+         border-bottom: 2px solid #2b2929;
+         padding-bottom: 10px;
+         max-width: 650px;
+         font-weight: bold;
+     }
+     
+     .tableInfo {
+         width: 650px;
+         background-color: #fff;
+         font-weight: bold;
+     }
+     
+     .invoiceInfo {
+         width: 650px;
+         font-weight: bold;
+     }
+     
+     #invoice_pane {
+         /* position: absolute; */
+         top: 10px;
+         left: 770px;
+         width: calc(98% - 770px);
+         height: 100%;
+         border-left: 2px solid #d8d8d8;
+         padding: 25px;
+         font-size: 14px;
+         max-width: 650px;
+     }
+     /* #order_items_D tr {
+        max-width: 50%;
+        overflow-x: auto;
+        background-color: aquamarine;
+    } */
+     
+     #settings_pane {
+         position: relative;
+         top: 10px;
+         left: 10px;
+         /* height: auto; */
+         width: 100%;
+         /* border-left: 2px solid #d8d8d8; */
+         font-size: 14px;
+         padding: 25px;
+     }
+     
+     #page_end_msg {
+         position: absolute;
+         background-color: rgba(18, 18, 18, 0.85);
+         border-radius: 5px;
+         padding: 5px;
+         font-size: 14px;
+         width: 640px;
+     }
+     
+     #final_note {
+         position: absolute;
+         /* background-color: rgba(18, 18, 18, 0.85); */
+         background-color: #fff;
+         border-radius: 5px;
+         padding: 5px;
+         font-size: 14px;
+         color: #000;
+         text-align: center;
+         width: 640px;
+         font-weight: bold;
+     }
+     
+     #page_end_msg .heading {
+         display: block;
+         color: #fff;
+         padding-bottom: 5px;
+         font-weight: 600;
+     }
+     
+     #page_end_msg .text {
+         display: block;
+         color: #999;
+     }
+     
+     #page_end_msg .links {
+         display: block;
+         color: #fff;
+         padding-top: 5px;
+     }
+     
+     #page_end_msg .links a {
+         color: #fff;
+     }
+     
+     .btn-primary {
+         background-color: #1273eb;
+         border-color: #1273eb;
+         color: #fff;
+         font-size: larger;
+         font-style: normal;
+         font: 14px;
+         padding: 5px 10px;
+         border-radius: 5px;
+         text-decoration: none;
+     }
+     
+     .btn-primary:hover {
+         background-color: #323232;
+         border-color: #323232;
+         cursor: pointer;
+     }
+     
+     b {
+         padding: 0px 0 0 20px;
+         font-size: 14px;
+         font-weight: bolder;
+     }
+     
+     @media screen and (max-width:767px) {
+         .customersVendor {
+             width: 380px;
+         }
+         .tableInfo {
+             width: 380px;
+         }
+         .invoiceInfo {
+             width: 380px;
+         }
+         body {
+             display: block;
+             padding: 0;
+             /* text-align: justify; */
+         }
+         #invoice_pane {
+             padding-left: 10px;
+             font-size: 12px;
+         }
+         #order_items_D tr {
+             max-width: 50%;
+             overflow-x: auto;
+             background-color: aquamarine;
+         }
+         #settings_pane {
+             font-size: 12px;
+             padding: 0px;
+         }
+         #invoice_pane .btn-primary {
+             background-color: #1273eb;
+             border-color: #1273eb;
+             color: #fff;
+             font-size: larger;
+             font-style: normal;
+             font: 14px;
+             padding: 15px 10px;
+             border-radius: 5px;
+             margin-left: 150px;
+         }
+         #final_note {
+             position: absolute;
+             background-color: rgba(18, 18, 18, 0.85);
+             border-radius: 5px;
+             padding: 5px;
+             font-size: 12px;
+             color: #fff;
+             text-align: center;
+             width: 370px;
+         }
+         #page_end_msg {
+             position: absolute;
+             background-color: rgba(18, 18, 18, 0.85);
+             border-radius: 5px;
+             padding: 5px;
+             font-size: 12px;
+             width: 370px;
+         }
+     }
+     
+     @media print {
+         .do_not_print {
+             display: none;
+         }
+     }
